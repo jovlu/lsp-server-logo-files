@@ -1,0 +1,389 @@
+server process started
+server process started
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/newtest.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didSave
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didSave
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/newtest.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/newtest.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/newtest.logo
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:0
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:6
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:1
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:1
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:0
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:1
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 19:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:5
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 21:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 21:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 21:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 21:5
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 20:3
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 29:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 29:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 36:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 36:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 29:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 29:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 29:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 29:8
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 1:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 1:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 2:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:4
+didSave
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:4
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:0
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 1:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 1:5
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 1:4
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:0
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 2:2
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:0
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 4:8
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 1:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 1:5
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:13
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 2:1
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:1
+didSave
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
