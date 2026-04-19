@@ -387,3 +387,962 @@ definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:3
 definition: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo at 0:1
 didSave
 didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 2:0
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:1
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:0
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 1:5
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:0
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:7
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:0
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:0
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:7
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:9
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 1:10
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 1:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 1:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 1:12
+didSave
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 3:7
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didSave
+didChange
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 26:41
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 36:6
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 36:1
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:13
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:26
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:29
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:44
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:43
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:42
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:41
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:40
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:39
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:34
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:33
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 45:28
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 45:27
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 45:26
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 45:25
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 45:24
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 45:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 45:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:16
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:15
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:14
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:13
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:10
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:10
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:13
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:14
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:15
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:16
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:19
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:20
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:21
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:22
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:23
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:24
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:25
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:26
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:28
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:30
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:32
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:10
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:14
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:13
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:10
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:3
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:21
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:20
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:19
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:18
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:17
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:16
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:14
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:13
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:10
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 39:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:6
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:8
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:9
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:10
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:13
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:14
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:15
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:16
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:17
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:18
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:19
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:18
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:17
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:16
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 38:15
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 33:13
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 33:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 33:11
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 33:12
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 33:13
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 33:14
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 29:24
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 29:23
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:40
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:41
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:40
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:39
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:38
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:37
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:36
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:35
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:34
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:33
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:32
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:31
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:32
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:33
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:34
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:35
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:36
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:37
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:38
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:39
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:40
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:41
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:42
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:43
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:44
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:45
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:46
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:45
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:44
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:43
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:42
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:43
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 43:44
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 23:42
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LOGO%20Test/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 12:18
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 30:6
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 20:31
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 20:32
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 20:33
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:13
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:7
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 2:2
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 2:5
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 1:8
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:8
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 2:5
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 2:7
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 1:9
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 2:9
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:4
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:5
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:6
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:1
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:2
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:4
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:5
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:7
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:9
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:6
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:18
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:18
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:19
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:21
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:23
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:24
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:23
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:22
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:5
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:6
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:8
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+hover: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:26
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:16
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:17
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:18
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:19
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:21
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:22
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:23
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit
+server process started
+initialize received
+didChangeConfiguration
+didOpen: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didSave
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+didChange
+didChange
+didChange
+didChange
+didChange
+semanticTokensFull: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+definition: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo at 0:14
+didClose: file:///C:/Users/Jovan/IdeaProjects/LSP-project/src/main/kotlin/test.logo
+exit

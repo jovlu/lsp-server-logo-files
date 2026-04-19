@@ -25,7 +25,9 @@ class LogoServer : LanguageServer {
             SemanticTokenTypes.Parameter,
             SemanticTokenTypes.Variable,
             SemanticTokenTypes.Number,
-            SemanticTokenTypes.Comment
+            SemanticTokenTypes.Comment,
+            SemanticTokenTypes.String,
+            SemanticTokenTypes.Operator
         ),
         listOf(SemanticTokenModifiers.Declaration)
     )
@@ -35,8 +37,8 @@ class LogoServer : LanguageServer {
 
         val capabilities = ServerCapabilities().apply {
             textDocumentSync = Either.forLeft(TextDocumentSyncKind.Full)
-            semanticTokensProvider = SemanticTokensWithRegistrationOptions(legend, true, false)
             definitionProvider = Either.forLeft(true)
+            semanticTokensProvider = SemanticTokensWithRegistrationOptions(legend, true, false)
             hoverProvider = Either.forLeft(true)
         }
 

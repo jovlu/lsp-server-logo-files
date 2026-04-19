@@ -8,176 +8,286 @@ class LogoDefinitionResolver {
 
     fun findDefinition(text: String, cursor: Position, uri: String): Location? {
         val lines = text.lines()
-        if (cursor.line < 0 || cursor.line >= lines.size) return null
+        if (cursor.line !in lines.indices) return null
 
-        val wordInfo = findWordAt(lines[cursor.line], cursor.character) ?: return null
-        val currentWord = wordInfo.text
-        val normalized = normalizeSymbol(currentWord)
+        val lexemeAt = LogoLanguage.findLexemeAt(lines[cursor.line], cursor.character) ?: return null
+        val symbol = classifySymbol(lexemeAt) ?: return null
+        val definitions = collectDefinitions(text, uri)
 
-        val procedureDeclarations = mutableMapOf<String, Location>()
-        val variableDeclarations = mutableMapOf<String, MutableList<ScopedLocation>>()
+        return when (symbol.kind) {
+            SymbolKind.PROCEDURE -> resolveProcedure(symbol.name, definitions.procedures, cursor)
+            SymbolKind.VARIABLE -> resolveVariable(
+                symbol.name,
+                definitions.variables,
+                definitions.procedureAt(cursor.line),
+                cursor
+            )
+        }
+    }
 
-        var currentProcedure: String? = null
+    private fun classifySymbol(lexemeAt: LogoLexemeAt): Symbol? {
+        val word = lexemeAt.lexeme.text
+        val name = LogoLanguage.normalizeSymbol(word)
+
+        return when {
+            isVariableWord(word) -> Symbol(name, SymbolKind.VARIABLE)
+            isQuotedWord(word) -> when (LogoLanguage.quotedWordRole(lexemeAt.lexemes, lexemeAt.index)) {
+                QuotedWordRole.VARIABLE_DECLARATION,
+                QuotedWordRole.VARIABLE_REFERENCE -> Symbol(name, SymbolKind.VARIABLE)
+                QuotedWordRole.PROCEDURE_DECLARATION,
+                QuotedWordRole.PROCEDURE_REFERENCE -> Symbol(name, SymbolKind.PROCEDURE)
+                QuotedWordRole.PLAIN_STRING -> null
+            }
+            else -> Symbol(name, SymbolKind.PROCEDURE)
+        }
+    }
+
+    private fun collectDefinitions(text: String, uri: String): DefinitionMaps {
+        val lines = text.lines()
+        val procedures = mutableMapOf<String, MutableList<Location>>()
+        val variables = mutableMapOf<String, MutableList<VariableDefinition>>()
+        val procedureScopes = mutableListOf<ProcedureScope>()
+
+        var currentProcedure: ProcedureScope? = null
 
         for ((lineNumber, line) in lines.withIndex()) {
-            val words = Regex("""\S+""").findAll(line).toList()
-            if (words.isEmpty()) continue
+            val lexemes = LogoLanguage.scanLine(line).lexemes
+            if (lexemes.isEmpty()) continue
 
             var expectProcedureName = false
             var onToLine = false
-            var expectMakeName = false
+            var expectQuotedProcedureName = false
+            var expectQuotedVariableName = false
+            var quotedVariableScope: String? = null
+            var collectLocalDeclarations = false
+            var expectLoopControlList = false
+            var expectLoopVariable = false
+            var expectNameValue = false
+            var expectNameVariable = false
 
-            for (match in words) {
-                val word = match.value
-                val start = match.range.first
-                val end = match.range.last + 1
+            for (lexeme in lexemes) {
+                val word = lexeme.text
                 val lower = word.lowercase()
 
+                if (collectLocalDeclarations && !isQuotedWord(word)) {
+                    collectLocalDeclarations = false
+                }
+
                 when {
+                    expectNameValue -> {
+                        expectNameValue = false
+                        expectNameVariable = true
+                    }
+
                     lower == "to" -> {
                         expectProcedureName = true
                         onToLine = true
                     }
 
-                    expectProcedureName -> {
-                        val name = word.lowercase()
-                        val location = Location(
-                            uri,
-                            Range(
-                                Position(lineNumber, start),
-                                Position(lineNumber, end)
-                            )
-                        )
-                        procedureDeclarations[name] = location
-                        currentProcedure = name
+                    expectProcedureName && LogoLanguage.isIdentifier(word) -> {
+                        val procedureName = lower
+                        addProcedure(procedures, procedureName, uri, lineNumber, lexeme)
+                        currentProcedure = ProcedureScope(procedureName, lineNumber, lines.lastIndex)
+                        procedureScopes += currentProcedure
                         expectProcedureName = false
                     }
 
                     lower == "end" -> {
+                        currentProcedure?.endLine = lineNumber
                         currentProcedure = null
                     }
 
-                    onToLine && word.startsWith(":") && word.length > 1 -> {
-                        val name = word.substring(1).lowercase()
-                        val location = Location(
+                    onToLine && isVariableWord(word) -> {
+                        addVariable(
+                            variables,
+                            word.substring(1),
+                            currentProcedure?.name,
                             uri,
-                            Range(
-                                Position(lineNumber, start),
-                                Position(lineNumber, end)
-                            )
+                            lineNumber,
+                            lexeme
                         )
-                        variableDeclarations
-                            .getOrPut(name) { mutableListOf() }
-                            .add(ScopedLocation(currentProcedure, location))
+                    }
+
+                    lower in LogoLanguage.procedureDeclarationKeywords -> {
+                        expectQuotedProcedureName = true
+                    }
+
+                    expectQuotedProcedureName && isQuotedWord(word) -> {
+                        addProcedure(procedures, word.substring(1), uri, lineNumber, lexeme)
+                        expectQuotedProcedureName = false
                     }
 
                     lower == "make" -> {
-                        expectMakeName = true
+                        expectQuotedVariableName = true
+                        quotedVariableScope = null
                     }
 
-                    expectMakeName && word.startsWith("\"") && word.length > 1 -> {
-                        val name = word.substring(1).lowercase()
-                        val location = Location(
+                    lower == "localmake" -> {
+                        expectQuotedVariableName = true
+                        quotedVariableScope = currentProcedure?.name
+                    }
+
+                    expectQuotedVariableName && isQuotedWord(word) -> {
+                        addVariable(
+                            variables,
+                            word.substring(1),
+                            quotedVariableScope,
                             uri,
-                            Range(
-                                Position(lineNumber, start),
-                                Position(lineNumber, end)
-                            )
+                            lineNumber,
+                            lexeme
                         )
-                        variableDeclarations
-                            .getOrPut(name) { mutableListOf() }
-                            .add(ScopedLocation(currentProcedure, location))
-                        expectMakeName = false
+                        expectQuotedVariableName = false
+                        quotedVariableScope = null
                     }
 
-                    else -> {
-                        if (word != "to") {
-                            expectMakeName = false
-                        }
+                    lower == "name" -> {
+                        expectNameValue = true
+                        expectNameVariable = false
+                    }
+
+                    expectNameVariable && isQuotedWord(word) -> {
+                        addVariable(variables, word.substring(1), null, uri, lineNumber, lexeme)
+                        expectNameVariable = false
+                    }
+
+                    lower == "local" -> {
+                        collectLocalDeclarations = true
+                    }
+
+                    collectLocalDeclarations && isQuotedWord(word) -> {
+                        addVariable(
+                            variables,
+                            word.substring(1),
+                            currentProcedure?.name,
+                            uri,
+                            lineNumber,
+                            lexeme
+                        )
+                    }
+
+                    lower in LogoLanguage.loopKeywords -> {
+                        expectLoopControlList = true
+                    }
+
+                    expectLoopControlList && word == "[" -> {
+                        expectLoopControlList = false
+                        expectLoopVariable = true
+                    }
+
+                    expectLoopVariable && LogoLanguage.isIdentifier(word) -> {
+                        addVariable(variables, word, currentProcedure?.name, uri, lineNumber, lexeme)
+                        expectLoopVariable = false
                     }
                 }
             }
         }
 
-        return when {
-            currentWord.startsWith(":") -> resolveVariable(normalized, variableDeclarations, cursor, lines)
-            else -> procedureDeclarations[normalized]
-        }
+        return DefinitionMaps(procedures, variables, procedureScopes)
+    }
+
+    private fun addProcedure(
+        procedures: MutableMap<String, MutableList<Location>>,
+        name: String,
+        uri: String,
+        lineNumber: Int,
+        lexeme: LogoLexeme
+    ) {
+        procedures
+            .getOrPut(name.lowercase()) { mutableListOf() }
+            .add(location(uri, lineNumber, lexeme))
+    }
+
+    private fun addVariable(
+        variables: MutableMap<String, MutableList<VariableDefinition>>,
+        name: String,
+        scope: String?,
+        uri: String,
+        lineNumber: Int,
+        lexeme: LogoLexeme
+    ) {
+        variables
+            .getOrPut(name.lowercase()) { mutableListOf() }
+            .add(VariableDefinition(scope, location(uri, lineNumber, lexeme)))
+    }
+
+    private fun resolveProcedure(
+        name: String,
+        procedures: Map<String, List<Location>>,
+        cursor: Position
+    ): Location? {
+        return procedures[name]?.lastOrNull { isBeforeOrAt(it.range.start, cursor) }
     }
 
     private fun resolveVariable(
         name: String,
-        declarations: Map<String, MutableList<ScopedLocation>>,
-        cursor: Position,
-        lines: List<String>
+        variables: Map<String, List<VariableDefinition>>,
+        currentProcedure: String?,
+        cursor: Position
     ): Location? {
-        val visibleProcedure = findEnclosingProcedure(lines, cursor.line)
-        val matches = declarations[name] ?: return null
+        val matches = variables[name] ?: return null
 
-        val local = matches.lastOrNull { it.scope == visibleProcedure }
-        if (local != null) return local.location
-
-        val global = matches.lastOrNull { it.scope == null }
-        return global?.location
-    }
-
-    private fun findEnclosingProcedure(lines: List<String>, targetLine: Int): String? {
-        var currentProcedure: String? = null
-
-        for ((lineNumber, line) in lines.withIndex()) {
-            if (lineNumber > targetLine) break
-
-            val words = Regex("""\S+""").findAll(line).map { it.value }.toList()
-            if (words.isEmpty()) continue
-
-            if (words[0].lowercase() == "to" && words.size >= 2) {
-                currentProcedure = words[1].lowercase()
-            } else if (words[0].lowercase() == "end") {
-                currentProcedure = null
-            }
+        if (currentProcedure != null) {
+            matches.lastOrNull {
+                it.scope == currentProcedure && isBeforeOrAt(it.location.range.start, cursor)
+            }?.let { return it.location }
         }
 
-        return currentProcedure
+        return matches.lastOrNull {
+            it.scope == null && isBeforeOrAt(it.location.range.start, cursor)
+        }?.location
     }
 
-    private fun findWordAt(line: String, character: Int): WordAtPosition? {
-        if (line.isEmpty()) return null
-
-        val safeChar = character.coerceIn(0, line.length)
-        val regex = Regex("""[^\s\[\];]+""")
-
-        for (match in regex.findAll(line)) {
-            val start = match.range.first
-            val endExclusive = match.range.last + 1
-
-            if (safeChar in start..endExclusive || (safeChar > 0 && safeChar - 1 in start until endExclusive)) {
-                return WordAtPosition(
-                    text = match.value,
-                    start = start,
-                    endExclusive = endExclusive
-                )
-            }
-        }
-
-        return null
+    private fun location(uri: String, lineNumber: Int, lexeme: LogoLexeme): Location {
+        return Location(
+            uri,
+            Range(
+                Position(lineNumber, lexeme.start),
+                Position(lineNumber, lexeme.endExclusive)
+            )
+        )
     }
 
-    private fun normalizeSymbol(word: String): String {
-        return when {
-            word.startsWith(":") && word.length > 1 -> word.substring(1).lowercase()
-            word.startsWith("\"") && word.length > 1 -> word.substring(1).lowercase()
-            else -> word.lowercase()
+    private fun isBeforeOrAt(declaration: Position, cursor: Position): Boolean {
+        return declaration.line < cursor.line ||
+            (declaration.line == cursor.line && declaration.character <= cursor.character)
+    }
+
+    private fun isVariableWord(word: String): Boolean {
+        return word.startsWith(":") && word.length > 1
+    }
+
+    private fun isQuotedWord(word: String): Boolean {
+        return word.startsWith("\"") && word.length > 1
+    }
+
+    private data class DefinitionMaps(
+        val procedures: Map<String, List<Location>>,
+        val variables: Map<String, List<VariableDefinition>>,
+        val procedureScopes: List<ProcedureScope>
+    ) {
+        fun procedureAt(lineNumber: Int): String? {
+            return procedureScopes.lastOrNull { lineNumber in it.startLine..it.endLine }?.name
         }
     }
 
-    private data class WordAtPosition(
-        val text: String,
-        val start: Int,
-        val endExclusive: Int
-    )
-
-    private data class ScopedLocation(
+    private data class VariableDefinition(
         val scope: String?,
         val location: Location
     )
+
+    private data class ProcedureScope(
+        val name: String,
+        val startLine: Int,
+        var endLine: Int
+    )
+
+    private data class Symbol(
+        val name: String,
+        val kind: SymbolKind
+    )
+
+    private enum class SymbolKind {
+        PROCEDURE,
+        VARIABLE
+    }
 }

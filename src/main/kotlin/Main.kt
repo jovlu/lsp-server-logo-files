@@ -14,5 +14,6 @@ fun main() {
 
     val server = LogoServer()
     val launcher = LSPLauncher.createServerLauncher(server, System.`in`, System.out)
-    launcher.startListening().get()
+    val future = launcher.startListening()
+    future.get()
 }

@@ -7,7 +7,6 @@ import org.eclipse.lsp4j.DidSaveTextDocumentParams
 import org.eclipse.lsp4j.Hover
 import org.eclipse.lsp4j.HoverParams
 import org.eclipse.lsp4j.Location
-import org.eclipse.lsp4j.SemanticTokenTypes
 import org.eclipse.lsp4j.SemanticTokens
 import org.eclipse.lsp4j.SemanticTokensParams
 import org.eclipse.lsp4j.jsonrpc.messages.Either
@@ -17,16 +16,19 @@ import java.util.concurrent.CompletableFuture
 class LogoTextDocuments : TextDocumentService {
 
     private val documents = mutableMapOf<String,String>()
+    private val tokenizer = LogoTokenizer()
     private val definitionResolver = LogoDefinitionResolver()
     private val hoverProvider = LogoHoverProvider()
 
-    private val tokenTypes = listOf(
-        SemanticTokenTypes.Keyword,   // 0
-        SemanticTokenTypes.Function,  // 1
-        SemanticTokenTypes.Parameter, // 2
-        SemanticTokenTypes.Variable,  // 3
-        SemanticTokenTypes.Number,    // 4
-        SemanticTokenTypes.Comment    // 5
+    private val typeToIndex = mapOf(
+        "keyword" to 0,
+        "function" to 1,
+        "parameter" to 2,
+        "variable" to 3,
+        "number" to 4,
+        "comment" to 5,
+        "string" to 6,
+        "operator" to 7
     )
 
     override fun didOpen(params: DidOpenTextDocumentParams) {
@@ -58,17 +60,7 @@ class LogoTextDocuments : TextDocumentService {
         log("semanticTokensFull: $uri")
 
         val text = documents[uri] ?: ""
-        val tokenizer = LogoTokenizer()
         val rawTokens = tokenizer.tokenize(text)
-
-        val typeToIndex = mapOf(
-            "keyword" to 0,
-            "function" to 1,
-            "parameter" to 2,
-            "variable" to 3,
-            "number" to 4,
-            "comment" to 5
-        )
 
         val data = mutableListOf<Int>()
 

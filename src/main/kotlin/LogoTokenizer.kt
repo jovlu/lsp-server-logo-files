@@ -2,193 +2,214 @@ package logo
 
 class LogoTokenizer {
 
-    private val keywords = setOf(
-        "to", "end", "repeat", "if", "make",
-        "fd", "forward",
-        "bk", "back",
-        "rt", "right",
-        "lt", "left",
-        "print",
-        "pu", "penup",
-        "pd", "pendown",
-        "cs", "clearscreen",
-        "home"
-    )
-
     fun tokenize(text: String): List<RawToken> {
-        val procedureNames = collectProcedureNames(text)
+        val knownProcedures = mutableSetOf<String>()
         val tokens = mutableListOf<RawToken>()
-        val lines = text.lines()
 
-        for ((lineNumber, line) in lines.withIndex()) {
-            var i = 0
+        for ((lineNumber, line) in text.lines().withIndex()) {
+            val scannedLine = LogoLanguage.scanLine(line)
+
             var expectProcedureName = false
             var onToLine = false
-            var expectMakeName = false
+            var expectedQuotedWord = QuotedWordKind.NONE
+            var expectLoopControlList = false
+            var expectLoopVariable = false
+            var expectNameValue = false
+            var expectNameVariable = false
+            var collectLocalDeclarations = false
 
-            while (i < line.length) {
-                val ch = line[i]
+            fun addToken(lexeme: LogoLexeme, type: String, declaration: Boolean = false) {
+                tokens += RawToken(
+                    line = lineNumber,
+                    start = lexeme.start,
+                    length = lexeme.endExclusive - lexeme.start,
+                    type = type,
+                    declaration = declaration
+                )
+            }
 
-                if (ch.isWhitespace()) {
-                    i++
-                    continue
-                }
-
-                if (ch == ';') {
-                    tokens += RawToken(
-                        line = lineNumber,
-                        start = i,
-                        length = line.length - i,
-                        type = "comment"
-                    )
-                    break
-                }
-
-                if (ch == '[' || ch == ']') {
-                    tokens += RawToken(
-                        line = lineNumber,
-                        start = i,
-                        length = 1,
-                        type = "keyword"
-                    )
-                    i++
-                    continue
-                }
-
-                val start = i
-                while (i < line.length &&
-                    !line[i].isWhitespace() &&
-                    line[i] != ';' &&
-                    line[i] != '[' &&
-                    line[i] != ']'
-                ) {
-                    i++
-                }
-
-                val word = line.substring(start, i)
+            for (lexeme in scannedLine.lexemes) {
+                val word = lexeme.text
                 val lower = word.lowercase()
 
+                if (collectLocalDeclarations && !isQuotedWord(word)) {
+                    collectLocalDeclarations = false
+                }
+
                 when {
+                    expectNameValue -> {
+                        when {
+                            word in structuralOperators -> addToken(lexeme, "operator")
+                            LogoLanguage.startsNumber(word, 0) -> addToken(lexeme, "number")
+                            LogoLanguage.isOperatorStart(word, 0) -> addToken(lexeme, "operator")
+                            isVariableWord(word) -> addToken(lexeme, "variable")
+                            isQuotedWord(word) -> addToken(lexeme, "string")
+                            lower in knownProcedures -> addToken(lexeme, "function")
+                            lower in LogoLanguage.keywordNames -> addToken(lexeme, "keyword")
+                        }
+
+                        expectNameValue = false
+                        expectNameVariable = true
+                        expectedQuotedWord = QuotedWordKind.NONE
+                        expectLoopVariable = false
+                    }
+
+                    word in structuralOperators -> {
+                        addToken(lexeme, "operator")
+                        if (word == "[" && expectLoopControlList) {
+                            expectLoopControlList = false
+                            expectLoopVariable = true
+                        }
+                    }
+
+                    LogoLanguage.startsNumber(word, 0) -> {
+                        addToken(lexeme, "number")
+                        expectedQuotedWord = QuotedWordKind.NONE
+                        expectLoopVariable = false
+                    }
+
+                    LogoLanguage.isOperatorStart(word, 0) -> {
+                        addToken(lexeme, "operator")
+                    }
+
                     lower == "to" -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "keyword"
-                        )
+                        addToken(lexeme, "keyword")
                         expectProcedureName = true
                         onToLine = true
-                        expectMakeName = false
+                        expectedQuotedWord = QuotedWordKind.NONE
                     }
 
                     expectProcedureName -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "function",
-                            declaration = true
-                        )
+                        addToken(lexeme, "function", declaration = true)
+                        knownProcedures += lower
                         expectProcedureName = false
+                        expectedQuotedWord = QuotedWordKind.NONE
                     }
 
-                    onToLine && word.startsWith(":") && word.length > 1 -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "parameter",
-                            declaration = true
-                        )
+                    onToLine && isVariableWord(word) -> {
+                        addToken(lexeme, "parameter", declaration = true)
+                        expectedQuotedWord = QuotedWordKind.NONE
                     }
 
-                    lower == "make" -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "keyword"
-                        )
-                        expectMakeName = true
+                    lower in LogoLanguage.variableDeclarationKeywords -> {
+                        addToken(lexeme, "keyword")
+                        expectedQuotedWord = QuotedWordKind.VARIABLE_DECLARATION
                     }
 
-                    expectMakeName && word.startsWith("\"") && word.length > 1 -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "variable",
-                            declaration = true
-                        )
-                        expectMakeName = false
+                    lower == "name" -> {
+                        addToken(lexeme, "keyword")
+                        expectNameValue = true
+                        expectNameVariable = false
+                        expectedQuotedWord = QuotedWordKind.NONE
                     }
 
-                    lower in keywords -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "keyword"
-                        )
-                        expectMakeName = false
+                    lower == "local" -> {
+                        addToken(lexeme, "keyword")
+                        collectLocalDeclarations = true
+                        expectedQuotedWord = QuotedWordKind.NONE
                     }
 
-                    word.startsWith(":") && word.length > 1 -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "variable"
-                        )
-                        expectMakeName = false
+                    lower in LogoLanguage.variableReferenceKeywords -> {
+                        addToken(lexeme, "keyword")
+                        expectedQuotedWord = QuotedWordKind.VARIABLE_REFERENCE
                     }
 
-                    word.matches(NUMBER_REGEX) -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "number"
-                        )
-                        expectMakeName = false
+                    lower in LogoLanguage.procedureDeclarationKeywords -> {
+                        addToken(lexeme, "keyword")
+                        expectedQuotedWord = QuotedWordKind.PROCEDURE_DECLARATION
                     }
 
-                    lower in procedureNames -> {
-                        tokens += RawToken(
-                            line = lineNumber,
-                            start = start,
-                            length = word.length,
-                            type = "function"
+                    lower in LogoLanguage.procedureReferenceKeywords -> {
+                        addToken(lexeme, "keyword")
+                        expectedQuotedWord = QuotedWordKind.PROCEDURE_REFERENCE
+                    }
+
+                    lower in LogoLanguage.loopKeywords -> {
+                        addToken(lexeme, "keyword")
+                        expectedQuotedWord = QuotedWordKind.NONE
+                        expectLoopControlList = true
+                    }
+
+                    lower in LogoLanguage.keywordNames -> {
+                        addToken(lexeme, "keyword")
+                        expectedQuotedWord = QuotedWordKind.NONE
+                    }
+
+                    expectLoopVariable && LogoLanguage.isIdentifier(word) -> {
+                        addToken(lexeme, "variable", declaration = true)
+                        expectLoopVariable = false
+                        expectedQuotedWord = QuotedWordKind.NONE
+                    }
+
+                    expectNameVariable && isQuotedWord(word) -> {
+                        addToken(lexeme, "variable", declaration = true)
+                        expectNameVariable = false
+                    }
+
+                    collectLocalDeclarations && isQuotedWord(word) -> {
+                        addToken(lexeme, "variable", declaration = true)
+                    }
+
+                    isVariableWord(word) -> {
+                        addToken(lexeme, "variable")
+                        expectedQuotedWord = QuotedWordKind.NONE
+                    }
+
+                    isQuotedWord(word) -> {
+                        if (expectedQuotedWord == QuotedWordKind.PROCEDURE_DECLARATION) {
+                            knownProcedures += word.substring(1).lowercase()
+                        }
+
+                        addToken(
+                            lexeme,
+                            expectedQuotedWord.tokenType,
+                            declaration = expectedQuotedWord.isDeclaration
                         )
-                        expectMakeName = false
+                        expectedQuotedWord = QuotedWordKind.NONE
+                    }
+
+                    lower in knownProcedures -> {
+                        addToken(lexeme, "function")
+                        expectedQuotedWord = QuotedWordKind.NONE
                     }
 
                     else -> {
-                        expectMakeName = false
+                        expectedQuotedWord = QuotedWordKind.NONE
+                        expectLoopVariable = false
                     }
                 }
+            }
+
+            scannedLine.commentStart?.let { commentStart ->
+                tokens += RawToken(
+                    line = lineNumber,
+                    start = commentStart,
+                    length = line.length - commentStart,
+                    type = "comment"
+                )
             }
         }
 
         return tokens
     }
 
-    private fun collectProcedureNames(text: String): Set<String> {
-        val names = mutableSetOf<String>()
-
-        for (line in text.lines()) {
-            val words = Regex("""\S+""").findAll(line).map { it.value }.toList()
-            if (words.isEmpty()) continue
-
-            if (words[0].lowercase() == "to" && words.size >= 2) {
-                names += words[1].lowercase()
-            }
-        }
-
-        return names
+    private fun isVariableWord(word: String): Boolean {
+        return word.startsWith(":") && word.length > 1
     }
 
-    companion object {
-        private val NUMBER_REGEX = Regex("""-?\d+(\.\d+)?""")
+    private fun isQuotedWord(word: String): Boolean {
+        return word.startsWith("\"") && word.length > 1
+    }
+
+    private enum class QuotedWordKind(val tokenType: String, val isDeclaration: Boolean) {
+        NONE("string", false),
+        VARIABLE_DECLARATION("variable", true),
+        VARIABLE_REFERENCE("variable", false),
+        PROCEDURE_DECLARATION("function", true),
+        PROCEDURE_REFERENCE("function", false)
+    }
+
+    private companion object {
+        private val structuralOperators = setOf("[", "]", "(", ")", ",")
     }
 }
