@@ -1,35 +1,23 @@
 # LOGO LSP Server
 
-## Build
+This setup is for IntelliJ IDEA using the `LSP4IJ` plugin.
+But it may be used in other IDEs.
 
-From the project root:
+## IntelliJ Setup
+
+1. Install the `LSP4IJ` plugin in IntelliJ IDEA.
+2. Build the server from the project root:
 
 ```powershell
 .\gradlew.bat installDist
 ```
 
-This creates the runnable server in:
+This creates the runnable launcher in `build/install/LSP-project/bin/`.
+
+3. In IntelliJ IDEA, go through Settings -> Languages & Frameworks -> Language Servers
 
 ```text
-build/install/LSP-project/
+cmd /c "cd /d <project-root> && build\install\LSP-project\bin\LSP-project.bat"
 ```
 
-## Run
-
-Start the server with:
-
-```powershell
-.\build\install\LSP-project\bin\LSP-project.bat
-```
-
-The server uses `stdio`, so it should be launched by an LSP client.
-
-## LSP Client Setup
-
-Configure your LSP client to start:
-
-```text
-build/install/LSP-project/bin/LSP-project.bat
-```
-
-and associate it with `.logo` files.
+4. Associate it with *.logo files.
