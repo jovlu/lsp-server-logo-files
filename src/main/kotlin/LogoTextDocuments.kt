@@ -16,6 +16,7 @@ import java.util.concurrent.CompletableFuture
 class LogoTextDocuments : TextDocumentService {
 
     private val documents = mutableMapOf<String,String>()
+    private val definitionIndexes = mutableMapOf<String, LogoDefinitionResolver.DefinitionIndex>()
     private val tokenizer = LogoTokenizer()
     private val definitionResolver = LogoDefinitionResolver()
     private val hoverProvider = LogoHoverProvider()
@@ -35,6 +36,7 @@ class LogoTextDocuments : TextDocumentService {
         val uri = params.textDocument.uri
         val text = params.textDocument.text
         documents[uri] = text
+        definitionIndexes[uri] = definitionResolver.buildIndex(text, uri)
         log("didOpen: ${uri}")
     }
 
@@ -42,12 +44,14 @@ class LogoTextDocuments : TextDocumentService {
         val uri = params.textDocument.uri
         val newText = params.contentChanges.firstOrNull()?.text ?: return
         documents[uri] = newText
+        definitionIndexes[uri] = definitionResolver.buildIndex(newText, uri)
         log("didChange")
     }
 
     override fun didClose(params: DidCloseTextDocumentParams) {
         val uri = params.textDocument.uri
         documents.remove(uri)
+        definitionIndexes.remove(uri)
         log("didClose: ${params.textDocument.uri}")
     }
 
@@ -91,10 +95,13 @@ class LogoTextDocuments : TextDocumentService {
     override fun definition(params: DefinitionParams): CompletableFuture<Either<List<Location>, List<org.eclipse.lsp4j.LocationLink>>> {
         val uri = params.textDocument.uri
         val text = documents[uri] ?: ""
+        val index = definitionIndexes[uri] ?: definitionResolver.buildIndex(text, uri).also {
+            definitionIndexes[uri] = it
+        }
 
         log("definition: $uri at ${params.position.line}:${params.position.character}")
 
-        val location = definitionResolver.findDefinition(text, params.position, uri)
+        val location = definitionResolver.findDefinition(index, params.position)
 
         return CompletableFuture.completedFuture(
             Either.forLeft(location?.let { listOf(it) } ?: emptyList())

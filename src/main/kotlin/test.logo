@@ -1,1 +1,10 @@
-name "gagd "majmune
+repeat 100 [  
+      setcolor (5) 
+      arc 50 90 
+ rt (15) 
+ setcolor 2 
+ arc 40 70 
+ lt (10) 
+ fd 5 
+       
+]
