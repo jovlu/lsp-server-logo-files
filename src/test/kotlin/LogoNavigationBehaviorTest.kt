@@ -4,7 +4,6 @@ import org.eclipse.lsp4j.Position
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
-import kotlin.test.assertNull
 
 class LogoNavigationBehaviorTest {
 
@@ -19,18 +18,20 @@ class LogoNavigationBehaviorTest {
     """.trimIndent()
 
     @Test
-    fun doesNotResolveProcedureBeforeDeclaration() {
-        assertNull(
+    fun resolvesProcedureDeclarationEvenWhenItAppearsLater() {
+        val forwardReferenceDefinition =
             definitionResolver.findDefinition(text, Position(0, 1), "file:///test.logo")
-        )
+        assertNotNull(forwardReferenceDefinition)
+        assertEquals(1, forwardReferenceDefinition.range.start.line)
+        assertEquals(3, forwardReferenceDefinition.range.start.character)
 
         val definition = definitionResolver.findDefinition(text, Position(3, 1), "file:///test.logo")
         assertNotNull(definition)
     }
 
     @Test
-    fun doesNotShowProcedureHoverBeforeDeclaration() {
-        assertNull(hoverProvider.hover(text, Position(0, 1)))
+    fun showsProcedureHoverBeforeDeclaration() {
+        assertNotNull(hoverProvider.hover(text, Position(0, 1)))
         assertNotNull(hoverProvider.hover(text, Position(3, 1)))
     }
 
@@ -41,7 +42,8 @@ class LogoNavigationBehaviorTest {
             thing "x
         """.trimIndent()
 
-        assertNull(
+        assertEquals(
+            null,
             definitionResolver.findDefinition(text, Position(0, 6), "file:///test.logo")
         )
 

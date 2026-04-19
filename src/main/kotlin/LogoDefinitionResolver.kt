@@ -130,7 +130,7 @@ class LogoDefinitionResolver {
         val symbol = classify(lexemeAt) ?: return null
 
         return if (symbol.kind == SymbolKind.PROCEDURE) {
-            index.procedures[symbol.name]?.lastOrNull { beforeOrAt(it.range.start, cursor) }
+            index.procedures[symbol.name]?.firstOrNull()
         } else {
             val defs = index.variables[symbol.name] ?: return null
             val scopeId = index.scopeAt(cursor.line)?.id
