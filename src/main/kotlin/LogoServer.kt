@@ -18,6 +18,7 @@ class LogoServer : LanguageServer {
     private val textDocuments = LogoTextDocuments()
     private val workspace = LogoWorkspace()
 
+    // redosled ovde mora isti kao typeToIndex dole u document service
     val legend = SemanticTokensLegend(
         listOf(
             SemanticTokenTypes.Keyword,

@@ -3,6 +3,7 @@ package logo
 class LogoTokenizer {
 
     fun tokenize(text: String): List<RawToken> {
+        // ovo skupljam usput da kasniji pozivi budu function a ne obican text
         val knownProcedures = mutableSetOf<String>()
         val tokens = mutableListOf<RawToken>()
 
@@ -32,12 +33,14 @@ class LogoTokenizer {
                 val word = lexeme.text
                 val lower = word.lowercase()
 
+                // local moze vise quoted imena zaredom
                 if (collectLocalDeclarations && !isQuotedWord(word)) {
                     collectLocalDeclarations = false
                 }
 
                 when {
                     expectNameValue -> {
+                        // name prvo vrednost, pa onda cekam "ime
                         when {
                             word in structuralOperators -> addToken(lexeme, "operator")
                             LogoLanguage.startsNumber(word, 0) -> addToken(lexeme, "number")
@@ -57,6 +60,7 @@ class LogoTokenizer {
                     word in structuralOperators -> {
                         addToken(lexeme, "operator")
                         if (word == "[" && expectLoopControlList) {
+                            // tek kad udje u [] krecem da cekam loop promenljivu
                             expectLoopControlList = false
                             expectLoopVariable = true
                         }
@@ -157,6 +161,7 @@ class LogoTokenizer {
 
                     isQuotedWord(word) -> {
                         if (expectedQuotedWord == QuotedWordKind.PROCEDURE_DECLARATION) {
+                            // ako je define "foo, posle foo prepoznam kao proceduru
                             knownProcedures += word.substring(1).lowercase()
                         }
 
@@ -181,6 +186,7 @@ class LogoTokenizer {
             }
 
             scannedLine.commentStart?.let { commentStart ->
+                // komentar uzimam u komadu
                 tokens += RawToken(
                     line = lineNumber,
                     start = commentStart,

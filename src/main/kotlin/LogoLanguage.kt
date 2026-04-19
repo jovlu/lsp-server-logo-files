@@ -153,6 +153,7 @@ object LogoLanguage {
             }
 
             if (ch == ';') {
+                // posle ; je sve komentar pa nema sta dalje da secka
                 return LogoScannedLine(lexemes, commentStart = i)
             }
 
@@ -190,6 +191,7 @@ object LogoLanguage {
     fun findLexemeAt(line: String, character: Int): LogoLexemeAt? {
         if (line.isEmpty()) return null
 
+
         val safeChar = character.coerceIn(0, line.length)
         val lexemes = scanLine(line).lexemes
 
@@ -205,6 +207,7 @@ object LogoLanguage {
     fun quotedWordRole(lexemes: List<LogoLexeme>, index: Int): QuotedWordRole {
         val word = lexemes.getOrNull(index)?.text ?: return QuotedWordRole.PLAIN_STRING
         if (!word.startsWith("\"") || word.length <= 1) return QuotedWordRole.PLAIN_STRING
+
 
         for (candidate in index - 1 downTo 0) {
             val lower = lexemes[candidate].text.lowercase()
@@ -269,6 +272,7 @@ object LogoLanguage {
 
         val next = line.getOrNull(index + 1)
         val previous = line.getOrNull(index - 1)
+
         return !(next?.isDigit() == true && (previous == null || isWordBoundary(previous)))
     }
 

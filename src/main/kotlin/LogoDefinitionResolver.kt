@@ -12,6 +12,7 @@ class LogoDefinitionResolver {
         val scopes = mutableListOf<ProcedureScope>()
         val lines = text.lines()
 
+        // ovde pamtim u kom smo to..end bloku
         var currentScope: ProcedureScope? = null
 
         for ((lineNumber, line) in lines.withIndex()) {
@@ -31,6 +32,7 @@ class LogoDefinitionResolver {
                 val word = lexeme.text
                 val lower = word.lowercase()
 
+                // local moze vise "ime" jedno za drugim, cim to prestane gasim flag
                 if (collectLocals && !isQuotedWord(word)) collectLocals = false
 
                 when {
@@ -39,6 +41,7 @@ class LogoDefinitionResolver {
                         expectNameVariable = true
                     }
                     lower == "to" -> {
+                        // zatvori stari scope
                         currentScope?.endLine = lineNumber - 1
                         expectProcedureName = true
                         onHeader = true
@@ -84,6 +87,7 @@ class LogoDefinitionResolver {
                         quotedVariableScopeId = null
                     }
                     lower == "name" -> {
+                        // name je naopako, prvo ide vrednost pa tek onda ime prom
                         expectNameValue = true
                         expectNameVariable = false
                     }
@@ -101,6 +105,7 @@ class LogoDefinitionResolver {
                         expectLoopList = true
                     }
                     expectLoopList && word == "[" -> {
+                        // loop var za for/dotimes iskace tek iz [] liste
                         expectLoopList = false
                         expectLoopVariable = true
                     }
@@ -195,6 +200,7 @@ class LogoDefinitionResolver {
         val variables: Map<String, List<VariableDef>>,
         val scopes: List<ProcedureScope>
     ) {
+        // uzmi zadnji scope koji pokriva line
         fun scopeAt(line: Int): ProcedureScope? = scopes.lastOrNull { line in it.startLine..it.endLine }
     }
 

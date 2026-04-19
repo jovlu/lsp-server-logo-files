@@ -21,6 +21,7 @@ class LogoTextDocuments : TextDocumentService {
     private val definitionResolver = LogoDefinitionResolver()
     private val hoverProvider = LogoHoverProvider()
 
+    // ovo mora da prati redosled iz LogoServer.legend
     private val typeToIndex = mapOf(
         "keyword" to 0,
         "function" to 1,
@@ -71,6 +72,7 @@ class LogoTextDocuments : TextDocumentService {
         var previousLine = 0
         var previousStart = 0
 
+        // lsp hoce delta encoding za semantic tokene, ne apsolutne pozicije
         for (token in rawTokens) {
             val deltaLine = token.line - previousLine
             val deltaStart = if (deltaLine == 0) token.start - previousStart else token.start
@@ -95,6 +97,7 @@ class LogoTextDocuments : TextDocumentService {
     override fun definition(params: DefinitionParams): CompletableFuture<Either<List<Location>, List<org.eclipse.lsp4j.LocationLink>>> {
         val uri = params.textDocument.uri
         val text = documents[uri] ?: ""
+        // fallback ako iz nekog razloga kes jos nije spreman
         val index = definitionIndexes[uri] ?: definitionResolver.buildIndex(text, uri).also {
             definitionIndexes[uri] = it
         }
