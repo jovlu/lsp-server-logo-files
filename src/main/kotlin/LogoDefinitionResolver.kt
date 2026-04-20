@@ -12,7 +12,7 @@ class LogoDefinitionResolver {
         val scopes = mutableListOf<ProcedureScope>()
         val lines = text.lines()
 
-        // ovde pamtim u kom smo to..end bloku
+        // ovde se pamti u kom smo to..end bloku
         var currentScope: ProcedureScope? = null
 
         for ((lineNumber, line) in lines.withIndex()) {
